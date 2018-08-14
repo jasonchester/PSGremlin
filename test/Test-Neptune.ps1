@@ -1,8 +1,6 @@
 
 [CmdletBinding()]
 param ()
-
-# Import-Module $(Join-Path $PSScriptRoot "../Publish/Gremlin.Net.dll")
 Import-Module $(Join-Path $PSScriptRoot "../Publish/PSGremlin.dll")
 
 Get-Command -Module PSGremlin
