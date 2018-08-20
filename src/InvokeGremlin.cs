@@ -19,10 +19,7 @@ namespace PSGremlin
         [Parameter]
         public bool EnableSsl { get; set; } = true;
 
-        [Parameter]
-        public SwitchParameter Cosmos {get; set; }
-
-        [Parameter]        
+        [Parameter(Mandatory=true)]        
         public PSCredential Credential { get; set; }
         // This method will be called once at the end of pipeline execution; if no input is received, this method is not called
 
@@ -35,15 +32,9 @@ namespace PSGremlin
         {
             WriteVerbose("Connecting GremlinClient");
 
-            var server = new GremlinServer(Hostname, Port, EnableSsl, Credential?.UserName, Credential?.GetNetworkCredential().Password);
-            if(Cosmos)
-            {
-                Client = new GremlinClient(server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
-            }
-            else 
-            {
-                Client = new GremlinClient(server);
-            }
+            var server = new GremlinServer(Hostname, Port, EnableSsl, Credential.UserName, Credential.GetNetworkCredential().Password);
+
+            Client = new GremlinClient(server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
         }
 
         protected override void ProcessRecord()

@@ -6,13 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-preview-06">
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Gremlin.Net" Version="3.3.3" />
+    <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-preview-03" />
+    <PackageReference Include="Gremlin.Net" Version="3.3.1" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="PSGremlin.psd1" CopyToOutputDirectory="Always" />
-    <None Include="PSGremlin.psm1" CopyToOutputDirectory="Always" />
-  </ItemGroup>
+
 </Project>
