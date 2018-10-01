@@ -12,4 +12,4 @@ $queries = @(
     "g.V().has('tenantId','ditchwitch')", "g.E().has('tenantId','ditchwitch')"
 )
 
-$queries | Invoke-Gremlin -Hostname "dev01-graph01.gremlin.cosmosdb.azure.com" -Credential $creds -EnableSsl $true -Cosmos | ConvertTo-Json -Depth 5
+$queries | Invoke-Gremlin -Hostname "dev01-graph01.gremlin.cosmosdb.azure.com" -Credential $creds -EnableSsl $true | ConvertTo-Json -Depth 5
