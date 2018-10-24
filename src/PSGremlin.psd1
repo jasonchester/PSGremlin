@@ -6,7 +6,7 @@
 
     # CompanyName = 'Contoso Inc.'
 
-    ModuleVersion = '0.1'
+    ModuleVersion = '0.5'
 
     # Use the New-Guid command to generate a GUID, and copy/paste into the next line
     GUID = 'c2f815db-7826-46a0-995d-f53813df9a5f'
@@ -39,16 +39,17 @@
             Tags = @('Gremlin', 'Graph', 'tinkerpop', 'CosmosDB', 'Neptune')
 
             # What software license is your code being released under? (see https://opensource.org/licenses)
-            LicenseUri = ''
+            LicenseUri = 'https://github.com/jasonchester/PSGremlin/blob/master/LICENSE'
 
             # What is the URL to your project's website?
-            ProjectUri = ''
+            ProjectUri = 'https://github.com/jasonchester/PSGremlin'
 
             # What is the URI to a custom icon file for your project? (optional)
-            IconUri = ''
+            IconUri = 'https://raw.githubusercontent.com/jasonchester/PSGremlin/master/docs/psgremlin-logo.png'
 
             # What new features, bug fixes, or deprecated features, are part of this release?
             ReleaseNotes = @'
+            # 2018-10-22 - Initial Release v 0.5
 '@
         }
     }
