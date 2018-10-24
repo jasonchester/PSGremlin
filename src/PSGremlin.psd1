@@ -13,7 +13,7 @@
 
     Copyright = '2018 Jason Chester'
 
-    Description = 'What does this module do?'
+    Description = 'Execute gremlin commands with the Gremlin.Net Driver. Works with Cosmos DB and AWS Neptune.'
 
     NestedModules = @('PSGremlin.dll')
 
