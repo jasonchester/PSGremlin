@@ -2,11 +2,11 @@
     # If authoring a script module, the RootModule is the name of your .psm1 file
     RootModule = 'PSGremlin.psm1'
 
-    Author = 'Jason Chester <jason.chester@gmail.com>'
+    Author = 'Jason Chester'
 
     # CompanyName = 'Contoso Inc.'
 
-    ModuleVersion = '0.5'
+    ModuleVersion = '0.5.1'
 
     # Use the New-Guid command to generate a GUID, and copy/paste into the next line
     GUID = 'c2f815db-7826-46a0-995d-f53813df9a5f'
@@ -18,7 +18,7 @@
     NestedModules = @('PSGremlin.dll')
 
     # Minimum PowerShell version supported by this module (optional, recommended)
-    # PowerShellVersion = ''
+    PowerShellVersion = '5.1'
 
     # Which PowerShell Editions does this module work with? (Core, Desktop)
     CompatiblePSEditions = @('Desktop', 'Core')
