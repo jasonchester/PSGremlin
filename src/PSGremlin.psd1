@@ -6,7 +6,7 @@
 
     # CompanyName = 'Contoso Inc.'
 
-    ModuleVersion = '0.5.1'
+    ModuleVersion = '0.6.0'
 
     # Use the New-Guid command to generate a GUID, and copy/paste into the next line
     GUID = 'c2f815db-7826-46a0-995d-f53813df9a5f'
@@ -49,6 +49,7 @@
 
             # What new features, bug fixes, or deprecated features, are part of this release?
             ReleaseNotes = @'
+            # 2018-11-03 - Add example and update readme
             # 2018-10-22 - Initial Release v 0.5
 '@
         }
